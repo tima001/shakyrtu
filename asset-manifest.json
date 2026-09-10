@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/apa-shakyru/static/css/main.bb7dd4bb.css",
+    "main.js": "/apa-shakyru/static/js/main.4bbb394b.js",
+    "static/js/787.7d79c18f.chunk.js": "/apa-shakyru/static/js/787.7d79c18f.chunk.js",
+    "static/media/music.MP3": "/apa-shakyru/static/media/music.5c4dc7be189669e25d47.MP3",
+    "static/media/Bickham_Script_Pro_3_Regular.otf": "/apa-shakyru/static/media/Bickham_Script_Pro_3_Regular.c03ebdc5b3118db16d5d.otf",
+    "static/media/TildaSans-Regular.ttf": "/apa-shakyru/static/media/TildaSans-Regular.2cd2faf0de7356ee4eb2.ttf",
+    "static/media/TildaSans-Bold.ttf": "/apa-shakyru/static/media/TildaSans-Bold.c07dea09036a49f6ba90.ttf",
+    "static/media/TildaSans-Medium.ttf": "/apa-shakyru/static/media/TildaSans-Medium.a5cb911c5efb571cd407.ttf",
+    "static/media/TildaSans-Semibold.ttf": "/apa-shakyru/static/media/TildaSans-Semibold.ae0f3e5cb9edc8ad8405.ttf",
+    "static/media/KZGoodVibes.ttf": "/apa-shakyru/static/media/KZGoodVibes.5aa1e69b07699f91503d.ttf",
+    "static/media/KZPFMonumentaPro-Regular.ttf": "/apa-shakyru/static/media/KZPFMonumentaPro-Regular.94b0b9dd5daafeadb925.ttf",
+    "static/media/SaveClip.App_625988988___n.jpg": "/apa-shakyru/static/media/SaveClip.App_625988988_18036346982777571_1276677898327981394_n.833b521492f14a809321.jpg",
+    "static/media/SaveClip.App_625351224___n.jpg": "/apa-shakyru/static/media/SaveClip.App_625351224_18036381701777571_8620385735909942911_n.768185af20aa536d72c4.jpg",
+    "static/media/SaveClip.App_626263748___n.jpg": "/apa-shakyru/static/media/SaveClip.App_626263748_18036346853777571_8208607543179336022_n.55964344c06cc5052a23.jpg",
+    "static/media/цветы рамка.webp": "/apa-shakyru/static/media/цветы рамка.526f837a7bc3eaac6b56.webp",
+    "static/media/цветы 1.webp": "/apa-shakyru/static/media/цветы 1.4ea465eb67acc7de3830.webp",
+    "static/media/SaveClip.App_625843776___n.jpg": "/apa-shakyru/static/media/SaveClip.App_625843776_18036381830777571_4535146886944735304_n.71053fdbece318606466.jpg",
+    "static/media/Miama_Nueva_kz.woff": "/apa-shakyru/static/media/Miama_Nueva_kz.bf7edec36b2714f7c0f8.woff",
+    "static/media/цветы 2.webp": "/apa-shakyru/static/media/цветы 2.4c30c692e9339b5ed3d5.webp",
+    "static/media/Fk Arabik.kz.ttf": "/apa-shakyru/static/media/Fk Arabik.kz.516a77c6d4d34f244971.ttf",
+    "static/media/цифра70.webp": "/apa-shakyru/static/media/цифра70.45d92e97e732983d66ff.webp",
+    "static/media/SaveClip.App_661724172___n.jpg": "/apa-shakyru/static/media/SaveClip.App_661724172_1277062230439500_7119331622540179883_n.2869709b949cb69d98ea.jpg",
+    "static/media/фиолетовый гардиентный фон.webp": "/apa-shakyru/static/media/фиолетовый гардиентный фон.36ea9a2a4b5abfe2242f.webp",
+    "static/media/рамка.webp": "/apa-shakyru/static/media/рамка.aa4f2deabc98135ed398.webp",
+    "static/media/орнамент.webp": "/apa-shakyru/static/media/орнамент.8b8ee51125f2c9b82a58.webp",
+    "static/media/орнамент 25.webp": "/apa-shakyru/static/media/орнамент 25.abf7fd4e4813dc7dd3ca.webp",
+    "static/media/Romulc.woff": "/apa-shakyru/static/media/Romulc.7abe3b8a8422dbf308d5.woff",
+    "static/media/wavy-bg-purple.webp": "/apa-shakyru/static/media/wavy-bg-purple.a54e37e66ae8f58bd41b.webp",
+    "index.html": "/apa-shakyru/index.html",
+    "main.bb7dd4bb.css.map": "/apa-shakyru/static/css/main.bb7dd4bb.css.map",
+    "main.4bbb394b.js.map": "/apa-shakyru/static/js/main.4bbb394b.js.map",
+    "787.7d79c18f.chunk.js.map": "/apa-shakyru/static/js/787.7d79c18f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb7dd4bb.css",
+    "static/js/main.4bbb394b.js"
+  ]
+}
