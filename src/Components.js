@@ -21,7 +21,7 @@ export default function Components({ isMuted, onToggle }) {
     <Page>
       <PhotoWithHeader isMuted={isMuted} onToggle={onToggle} />
 
-      <Divider><img src={GoldDivider} alt="" style={{ width: 130, opacity: 0.9 }} /></Divider>
+      <Divider><img src={GoldDivider} alt="" style={{ width: 160, opacity: 0.9 }} /></Divider>
 
       <Reveal>
           <InvitationText />
@@ -50,7 +50,7 @@ export default function Components({ isMuted, onToggle }) {
 
       <Reveal>
         <Closing>
-          <FloralDeco src={FloralBottom} alt="" />
+          {/* <FloralDeco src={FloralBottom} alt="" /> */}
           <TitleFlourish gap={14}>
             <CloseTitle>Той иелері:</CloseTitle>
           </TitleFlourish>

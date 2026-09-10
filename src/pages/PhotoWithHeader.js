@@ -8,9 +8,9 @@ import FloralCorner from "../img/эти фото/цветы 1.webp";
 import PageBg from "../img/эти фото/фиолетовый гардиентный фон.webp";
 
 const pulse = keyframes`
-  0%{box-shadow:0 0 0 0 rgba(200,176,109,.4)}
-  70%{box-shadow:0 0 0 10px rgba(200,176,109,0)}
-  100%{box-shadow:0 0 0 0 rgba(200,176,109,0)}
+  0%{box-shadow:0 0 0 0 rgba(109,74,109,.35)}
+  70%{box-shadow:0 0 0 12px rgba(109,74,109,0)}
+  100%{box-shadow:0 0 0 0 rgba(109,74,109,0)}
 `;
 
 const rotate = keyframes`
@@ -36,8 +36,18 @@ export default function PhotoWithHeader({ isMuted, onToggle }) {
     <Hero>
       <FloralCornerImg src={FloralCorner} alt="" />
 
-      <MusicCircle onClick={onToggle} playing={isMuted ? 0 : 1}>
-        {isMuted ? "▶" : "❙❙"}
+      <MusicCircle onClick={onToggle} playing={isMuted ? 0 : 1} aria-label={isMuted ? "Әуенді қосу" : "Әуенді тоқтату"}>
+        <MusicRing />
+        {isMuted ? (
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M8 5.5v13a1 1 0 0 0 1.53.85l10.4-6.5a1 1 0 0 0 0-1.7L9.53 4.65A1 1 0 0 0 8 5.5Z" />
+          </svg>
+        ) : (
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <rect x="6" y="4.5" width="4.5" height="15" rx="1.5" />
+            <rect x="13.5" y="4.5" width="4.5" height="15" rx="1.5" />
+          </svg>
+        )}
       </MusicCircle>
 
       <Eyebrow>Мерейтойға шақыру</Eyebrow>
@@ -82,24 +92,52 @@ const FloralCornerImg = styled.img`
   pointer-events: none;
 `;
 
-const MusicCircle = styled.button`
+const spin = keyframes`
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+`;
+
+const MusicRing = styled.span`
   position: absolute;
-  top: 16px;
-  right: 16px;
-  z-index: 5;
-  width: 56px;
-  height: 56px;
+  inset: -3px;
   border-radius: 50%;
-  border: 1.5px solid #cdad56;
-  background: rgba(255, 255, 255, 0.7);
-  color: #84744b;
-  font-size: 22px;
+  pointer-events: none;
+  background: conic-gradient(from 0deg, #cdad56, #6d4a6d, #cdad56);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 1.5px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 1.5px));
+  animation: ${spin} 6s linear infinite;
+  opacity: 0.9;
+`;
+
+const MusicCircle = styled.button`
+  position: fixed;
+  top: 5%;
+  right: 16px;
+  transform: translateY(-50%);
+  pointer-events: auto;
+  z-index: 50;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.68));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #6d4a6d;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(132, 116, 75, 0.18);
-  animation: ${(p) => (p.playing ? `${pulse} 2s ease-in-out infinite` : "none")};
+  box-shadow: 0 6px 18px rgba(109, 74, 109, 0.22), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: ${(p) => (p.playing ? `${pulse} 2.2s ease-in-out infinite` : "none")};
+
+  &:hover {
+    transform: translateY(-50%) scale(1.07);
+  }
+  &:active {
+    transform: translateY(-50%) scale(0.94);
+  }
 `;
 
 const Eyebrow = styled.div`
@@ -126,8 +164,8 @@ const Badge = styled.div`
 `;
 
 const Glow = styled.img`
-  width: 140%;
-  height: 140%;
+  width: 130%;
+  height: 130%;
   object-fit: contain;
   display: block;
   position: absolute;

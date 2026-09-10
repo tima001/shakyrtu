@@ -129,5 +129,5 @@ const Started = styled.div`
 const DateText = styled.div`
   font-family: "Bika";
   font-size: 40px;
-  color: #3a204b;
+  color: #fff;
 `;
