@@ -1,0 +1,81 @@
+import React from "react";
+import styled from "@emotion/styled";
+
+export default function InformationText() {
+  return (
+    <>
+      <VenueLabel>Мекен-жайы:</VenueLabel>
+
+      <AddrBlock>
+        <City>Тараз қаласы,</City>
+        <Street>Аль-Фараби көшесі, 68</Street>
+        <VName>«Qobyz ballroom»</VName>
+        <VType>салтанат сарайы</VType>
+      </AddrBlock>
+
+      <MapBtn onClick={() => window.open("https://2gis.kz/taraz/firm/70000001111844810")}>
+        Картаны ашу
+      </MapBtn>
+    </>
+  );
+}
+
+const VenueLabel = styled.div`
+  font-family: "bika", cursive;
+  font-size: 48px;
+  color: #6d4a6d;
+  text-align: center;
+`;
+
+const AddrBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+`;
+
+const City = styled.div`
+  font-family: "KZPFMonumentaPro", Arial, sans-serif;
+  font-size: 17px;
+  color: #3a204b;
+  text-align: center;
+`;
+
+const Street = styled.div`
+  font-family: "KZPFMonumentaPro", Arial, sans-serif;
+  font-size: 16px;
+  color: #856685;
+  text-align: center;
+`;
+
+const VName = styled.div`
+  font-family: "KZPFMonumentaPro", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: #3a204b;
+  text-align: center;
+  margin-top: 6px;
+`;
+
+const VType = styled.div`
+  font-family: "KZPFMonumentaPro", Arial, sans-serif;
+  font-size: 16px;
+  color: #856685;
+  text-align: center;
+`;
+
+const MapBtn = styled.button`
+  font-family: "KZPFMonumentaPro", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #ffffff;
+  background: #3c2546;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 28px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  margin-top: 24  px;
+  transition: all 0.3s;
+  &:hover { background: #2c1a36; transform: translateY(-2px); }
+`;
